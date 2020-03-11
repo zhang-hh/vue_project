@@ -1,0 +1,35 @@
+/*遮罩层的动画*/
+.mask-enter
+  opacity 0 !important
+.mask-enter-active
+  transition opacity .3s linear !important
+.mask-enter-to
+  opacity 1 !important
+.mask-leave  //事实上这个没有作用   -
+  opacity 1 !important
+.mask-leave-active
+  transition opacity .3s linear !important
+.mask-leave-to
+  opacity 0 !important
+/*商品数量加减得动画*/
+
+  /*从隐藏到显示的动画*/
+.reduce-enter
+  opacity 0 !important
+  transform translate3d(48px,0,0) rotate(0deg)!important
+.reduce-enter-active
+  transition all .3s linear !important
+.reduce-enter-to
+  opacity 1 !important
+  transform translate3d(0,0,0) rotate(-720deg)!important
+
+//从显示到隐藏
+/*reduce-leave的api没有用*/
+.reduce-leave  //事实上这个没有作用   -
+  opacity 1 !important
+  transform translate3d(0,0,0) rotate(-720deg)!important
+.reduce-leave-active
+  transition all .3s linear !important
+.reduce-leave-to
+  opacity 0 !important
+  transform translate3d(48px,0,0) rotate(0deg)!important
